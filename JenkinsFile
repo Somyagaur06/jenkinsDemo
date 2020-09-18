@@ -3,7 +3,7 @@ pipeline{
     agent any
     environment{
     
-    PATH="{$PATH}/jenkinsDemo"
+    PATH="/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
 
 
     }
