@@ -25,7 +25,8 @@ pipeline{
           {
           
           steps{
-  
+   
+     sh "cd /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
   
          sh "mvn clean package"
          
