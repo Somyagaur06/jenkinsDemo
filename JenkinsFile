@@ -36,6 +36,18 @@ pipeline{
           }
           
           
+          stage("Tomcat-Deployment"){
+          
+          steps{
+          
+          sh "cp /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo /opt/apache-tomcat-8.5.57/webapps/"
+          
+          
+          }
+          
+          }
+          
+          
         }
     
     
