@@ -2,6 +2,7 @@ pipeline{
     
     agent any
     environment{
+    
     PATH="/usr/share/maven/bin:$PATH"
     }
     stages{
@@ -21,7 +22,7 @@ pipeline{
           {
           
           steps{
-          
+          sh " mvn -f /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
           sh "mvn clean package"
           }
           
