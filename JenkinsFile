@@ -10,9 +10,43 @@ pipeline{
                
                git 'https://github.com/Somyagaur06/jenkinsDemo.git'
                
-           }
-           
-       }
+          }
+          }
+          
+          
+          stage("Maven Build")
+          {
+          
+          steps{
+          
+          sh "mvn clean package"
+          }
+          
+          
+          }
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
     }
     
     
