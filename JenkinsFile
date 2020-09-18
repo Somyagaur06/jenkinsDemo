@@ -2,8 +2,8 @@ pipeline{
     
     agent any
     environment{
-    
-    PATH="/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
+    $PATH=/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
+    PATH="/usr/share/maven/bin:$PATH"
 
 
     }
@@ -26,9 +26,9 @@ pipeline{
           
           steps{
   
-    withEnv(['PATH=/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo']){
+  
          sh "mvn clean package"
-         }
+         
           }
           
           
