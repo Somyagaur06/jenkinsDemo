@@ -40,7 +40,7 @@ pipeline{
           
           steps{
           
-          sh "cp /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo/*.war /opt/apache-tomcat-8.5.57/webapps/"
+          sh "cp /var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo/target/*.war /opt/apache-tomcat-8.5.57/webapps/"
           
           
           }
