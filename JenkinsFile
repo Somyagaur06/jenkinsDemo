@@ -3,7 +3,7 @@ pipeline{
     agent any
     environment{
     
-    PATH="/usr/share/maven/bin:$/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
+    PATH="/usr/share/maven/bin:/var/lib/jenkins/workspace/declarativeDemo/jenkinsDemo"
     }
     stages{
         
