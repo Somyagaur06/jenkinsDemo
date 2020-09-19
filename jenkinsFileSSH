@@ -35,8 +35,7 @@ pipeline{
           }
           }
           
-          
-          stage("Tomcat-Deployment over SSH"){
+           stage("Tomcat-Deployment over SSH"){
           
           steps{
           
