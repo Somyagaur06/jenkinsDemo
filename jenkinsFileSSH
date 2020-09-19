@@ -16,8 +16,7 @@ pipeline{
            steps{
                
                git 'https://github.com/Somyagaur06/jenkinsDemo.git'
-               
-          }
+                }
           }
           
           
