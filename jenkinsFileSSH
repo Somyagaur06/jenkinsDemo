@@ -5,6 +5,8 @@ pipeline{
     
     PATH="/usr/share/maven/bin/:$PATH"
  }
+ 
+ triggers{ cron('H/1 * * * *') }
     
     stages{
         
