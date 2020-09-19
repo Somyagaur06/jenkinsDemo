@@ -46,7 +46,7 @@ pipeline{
           }
           
           }
-          
+          }
           
           post{
           
@@ -59,9 +59,9 @@ This is to inform you that your recent build is failed.''', cc: '', from: '', re
           
           
           }
-          
+ 
           
         }
     
     
-}
+
