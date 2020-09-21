@@ -37,7 +37,7 @@ input[type=submit] {
 body {
 
   border-radius: 2px;
-  background-color: #f2f2f2;
+  background-color:#ffcccc;
   padding: 20px;
 }
 
