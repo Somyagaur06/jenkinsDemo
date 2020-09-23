@@ -1,7 +1,7 @@
 @Library('jenkinsSharedLibrary')_
 pipeline{
 
-agent :any
+agent any
 
 stages{
 
