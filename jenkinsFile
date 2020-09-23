@@ -1,2 +1,30 @@
 @Library('jenkinsSharedLibrary')_
- email
+ pipeline{
+ agent any
+ stages {
+    stage ('Start') {
+      steps {
+        
+       email
+      }
+    }
+ }}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
