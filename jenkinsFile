@@ -5,7 +5,7 @@
     stage ('Start') {
       steps {
         
-       email
+       email 'demo'
       }
     }
  }}
