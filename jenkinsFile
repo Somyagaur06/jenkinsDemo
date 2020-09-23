@@ -1,2 +1,2 @@
-@Library('enkinsSharedLibrary')
+@Library('jenkinsSharedLibrary')_
 email()
