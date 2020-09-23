@@ -60,7 +60,7 @@
           
           success{
           
-        mail 'success'
+        email 'success'
           
           
           }
