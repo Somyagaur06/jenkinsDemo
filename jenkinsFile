@@ -1,6 +1,5 @@
- libraries {
-     lib('jenkinsSharedLibrary')
- }
+library('jenkinsSharedLibrary@master')_
+ 
 pipeline{
 
 agent :any
