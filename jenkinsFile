@@ -1,26 +1,21 @@
 @Library('jenkinsSharedLibrary')_
-pipeline{
+ pipeline{
+    
+    agent any
+    environment{
+    
+    PATH="/usr/share/maven/bin/:$PATH"
+ }
+ 
 
-agent any
-
-stages{
-
-stage('Start'){
-
-steps{
-
-email
-
-
-}
-
-}
-
-
-}
-
-
-
-
-
-}
+    
+    stages{
+        
+       stage("Start")
+       {
+           
+           steps{
+               
+               email
+                }
+          }
