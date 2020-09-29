@@ -1,0 +1,33 @@
+---
+- name: Install tomcat
+  hosts: servers
+  become: true
+  tasks:
+  - name: Install Java
+    yum:
+      name: java
+      state: latest
+      
+  - name: Download tomcat 
+    get_url:
+      url: http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz -P /usr/local
+      dest: /usr/local
+      
+  - name: Extract Packages
+    unarchive:
+      src: /usr/local/apache-tomcat-8.5.46.tar.gz
+      dest: /usr/local
+      remote_src: yes
+      
+    -name : Copy War file to tomcat 
+     copy:
+       src: 
+       dest: /usr/local/webapps/
+      
+   - name: Start tomcat
+     shell: nohup /usr/local/apache-tomcat-8.5.46/bin/startup.sh
+   
+   
+    
+    
+  
