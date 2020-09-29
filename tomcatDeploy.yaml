@@ -3,10 +3,10 @@
   hosts: servers
   become: true
   tasks:
-   - name: Install Java
-     yum:
-       name: java
-       state: latest
+  - name: Install Java
+    yum:
+      name: java
+      state: latest
       
    - name: Download tomcat 
      get_url:
