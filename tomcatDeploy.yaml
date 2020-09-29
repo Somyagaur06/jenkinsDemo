@@ -19,7 +19,7 @@
       dest: /usr/local
       remote_src: yes
       
-   - name : Copy War file to tomcat 
+   - name: Copy War file to tomcat 
      copy:
        src: /var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo/target/*.war
        dest: /usr/local/webapps/
