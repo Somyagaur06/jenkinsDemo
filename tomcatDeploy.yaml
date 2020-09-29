@@ -19,12 +19,12 @@
       dest: /usr/local
       remote_src: yes
       
-   - name: Copy War file to tomcat 
-     copy:
+  - name: Copy War file to tomcat 
+      copy:
        src: /var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo/target/*.war
        dest: /usr/local/webapps/
       
-   - name: Start tomcat
+  - name: Start tomcat
      shell: nohup /usr/local/apache-tomcat-8.5.46/bin/startup.sh
    
    
