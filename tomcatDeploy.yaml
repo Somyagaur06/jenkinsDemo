@@ -5,7 +5,7 @@
   tasks:
    - name: Download tomcat 
      get_url:
-       url: http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz -P /usr/local
+       url: http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz
        dest: /usr/local
       
    - name: Extract Packages
