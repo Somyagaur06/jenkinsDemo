@@ -21,7 +21,7 @@
       
     -name : Copy War file to tomcat 
      copy:
-       src: 
+       src: /var/lib/jenkins/workspace/sharedLibrary2/jenkinsDemo/target/*.war
        dest: /usr/local/webapps/
       
    - name: Start tomcat
