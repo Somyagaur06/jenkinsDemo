@@ -3,13 +3,7 @@
   hosts: servers
   become: true
   tasks:
-  - name: Install Java
-    yum:
-      name: java
-      state: latest
-      update_cache: yes
-      
-  - name: Download tomcat 
+   - name: Download tomcat 
     get_url:
        url: http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz -P /usr/local
        dest: /usr/local
