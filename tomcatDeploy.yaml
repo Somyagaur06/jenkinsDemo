@@ -16,8 +16,11 @@
       
    - name: Copy War file to tomcat 
      copy:
-       src: var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo/target/
+       src: var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo/target/*.war
        dest: /usr/local/webapps/
+       owner: jenkins
+       group: jenkins
+       mode: '0644'
       
    - name: Start tomcat
      shell: nohup /usr/local/apache-tomcat-8.5.46/bin/startup.sh
