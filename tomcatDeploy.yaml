@@ -16,7 +16,7 @@
       
    - name: Copy War file to tomcat 
      copy:
-       src: .
+       src: ./
        dest: /usr/local/webapps/
       
    - name: Start tomcat
