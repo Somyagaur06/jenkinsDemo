@@ -151,6 +151,6 @@
     
   </dependencies>
   <build>
-    <finalName>Validatation</finalName>
+    <finalName>Validate</finalName>
   </build>
 </project>
