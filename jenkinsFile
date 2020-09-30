@@ -1,5 +1,5 @@
-@Library('jenkinsSharedLibrary')_
- ansibleDemo()
+@Library('jenkinsSharedLibrary2')_
+ main()
           
           
           
