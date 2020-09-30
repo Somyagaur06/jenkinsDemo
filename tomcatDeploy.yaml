@@ -16,7 +16,7 @@
       
    - name: Copy War file to tomcat 
      copy:
-       src: /var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo/target/*.war
+       src: /var/lib/jenkins/workspace/ansibleDemo/jenkinsDemo/target/Validatation.war
        dest: /usr/local/webapps/
        
       
