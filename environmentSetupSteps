@@ -1,0 +1,34 @@
+Step 1: Created a Java Project using Eclipse IDE
+
+Step 2:Intialized an new git repository on local system and pushed the code from local repository to Remote github repository:
+        1.Open git bash in new folder
+        2.git init
+        3.git remote add origin "https://github.com/Somyagaur06/DockerDemo.git"
+        4.git add -A
+        5.git commit -m "adding files"
+        6.git push origin master
+        
+      
+      Project is now pushed to https://github.com/Somyagaur06/DockerDemo.git
+      
+      
+      
+   Step 3: Jenkins Setup
+           1.Jenkins is setup and running on EC2 instance on port 8010
+           
+           
+   
+   Step 3: Created a new project in Jenkins to build the project from "https://github.com/Somyagaur06/DockerDemo.git"
+           
+           1.On any change in files of repository "https://github.com/Somyagaur06/DockerDemo.git" Jenkins will trigger build
+           2.Once ,the project is build and packaged run Shell commands to run Dockerfile and build docker image from docker file
+           3.Shell commands for building docker image from docker file are:
+               1  cd "path to Dockerfile" 
+               2.docker build -t "image name" .
+               3.docker run  -p <external port>:<container-port> "image name same as given in step 2"
+            
+              Push Image to Docker Repository
+          1.docker login
+          2.docker tag <name of image to be tagged> <dockerHub Username>/<image name>
+          3.docker push <name of the tagged image to be pushed>
+           
